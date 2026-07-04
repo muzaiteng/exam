@@ -38,3 +38,47 @@
 //	}
 //	printf("%d\n", num);
 //}
+//题目 2.2（高仿题）
+//从键盘输入一个字符串，统计其中空格和数字字符的总个数
+//int main() {
+//	char arr[100];
+//	int num = 0;
+//	fgets(arr, sizeof(arr), stdin);
+//	for(int i=1; arr[i] != '\0'; i++) {
+//		if (arr[i] == ' ' || (arr[i] >= '0' && arr[i] <= '9')) {
+//			num++;
+//		}
+//	}
+//	printf("%d\n", num);
+//
+//}
+//题目 3.1（原题变数值）
+//输出所有的“四叶玫瑰数”，即一个4位数，其各位数字四次方和等于该数本身
+//例如，1634 = 1 ^ 4 + 6 ^ 4 + 3 ^ 4 + 4 ^ 4。
+//int fourth_power(int n) {
+//    return n * n * n * n;
+//}
+//int main() {
+//	int fourth_power(int n);
+//	printf("四叶玫瑰数有：\n");
+//	for (int i = 1000; i <= 9999; i++) {
+//		int single_digit = i % 10;
+//		int tens_digit = (i / 10) % 10;
+//		int hundreds_digit = (i / 100) % 10;
+//		int thundous_digit = (i / 1000);
+//		
+//		if (fourth_power(single_digit) +
+//			fourth_power(tens_digit) +
+//			fourth_power(hundreds_digit) +
+//			fourth_power(thundous_digit) == i) {
+//			printf("%d\n", i);
+//
+//		}
+//
+//	}
+//	printf("输出完毕\n");
+//
+//}
+//题目 3.2（高仿题）
+//输出 100 到 999 之间所有的数，满足：个位数字的平方加上十位数字的平方等于百位数字的平方。
+int main() {
